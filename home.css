@@ -1,0 +1,393 @@
+    /* CSS styles go here */
+    body {
+        font-family:sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .container {
+        margin: 0 auto;
+        padding: 40px;
+        text-align: center;
+      }
+  
+   .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(rgb(111, 176, 237), white);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    z-index: 100;
+  }
+  
+      .header-logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        text-decoration: none;
+        padding-left: 20px;
+      }
+  
+      .header-menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+  
+      .header-menu li {
+        margin-right: 20px;
+      }
+  
+      .header-menu li a {
+        text-decoration: none;
+        color: #525050;
+      }
+  
+      .cta-button {
+        display: inline-block;
+        padding: 10px 30px;
+        font-size: 20px;
+        color: #fff;
+        background-color:rgb(15, 214, 214);
+        margin-right: 10px;
+        border-radius: 20%;
+        transition: background-color 0.3s ease;
+      }
+  
+      .cta-button:hover {
+        background-color:rgb(5, 133, 133);
+   }
+  
+      h1 {
+        font-size: 40px;
+        color: #333;
+        margin-bottom: 20px;
+      }
+  
+      p {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 30px;
+      }
+  
+      @media screen and (max-width: 768px) {
+        .heading-container {
+          height: auto;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+        }
+      
+        .heading-container img {
+          width: 100%;
+          margin-top: 20px;
+        }
+      }
+
+      .features {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+  }
+  
+  .feature:hover  {
+    transform: scale(1.05);
+    background-color:#20b2aa;
+    box-shadow: 20px;
+  
+  }
+  
+  .feature {
+    margin-top: 40px;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+      /* Add this CSS to style the menu icon */
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  /* Update the header-menu styles for responsive behavior */
+  .header-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-menu li {
+    margin-right: 20px;
+  }
+  
+  .header-menu li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 16px;
+  }
+  
+  .heading-container {
+      margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    background-color: rgb(55, 162, 205);
+    color: #fff;
+    height: 600px;
+  border-bottom-left-radius:30% ;
+  border-bottom-right-radius:30%;
+  animation: MoveUpDown 3s linear infinite;
+  position:relative;
+  }
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 100px;
+    }
+  }
+  .features {
+    animation: MoveUpDown 3s linear infinite;
+    position:relative;  }
+  
+    @keyframes MoveUpDown {
+      0%, 100% {
+        bottom: 0;
+      }
+      50% {
+        bottom: 100px;
+      }
+    } 
+  
+  
+  
+
+  .heading-container h1 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+    flex: 1;
+}  
+  .heading-container p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    flex: 1;
+  }
+  
+  .heading-container img {
+    width: 300px;
+    height: auto;
+    margin-left: 50px;
+  }
+     
+      .feature:hover img {
+    transform: scale(1.2);
+      }
+  .feature:hover h2 {
+  color: #fff;
+ 
+  }
+  .feature:hover p {
+  color: #fff;
+  }
+  .feature:hover{
+    box-shadow: 5px 10px rgb(149, 148, 148);
+
+  }
+  .maincontainer{
+    margin-top: -50px;
+    padding-top: 100px;
+    height: 450px;
+    background-color:rgb(235, 244, 244);
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  .maincontainer h1{
+    margin-right: 500px;
+  }
+  .sections{
+    border-radius: 40%;
+    box-shadow: 5px 10px #888888;
+        margin-top: 80px;
+    height: 400px;
+    background-color: #5de9e2;
+  }
+  .sections:hover{
+    transition: transform 0.3s ease;
+
+    }
+ #marq{
+    color: white;
+    font-size: 74px;
+    padding-top: 50px;
+    font-family: sans-serif;
+ }
+ .ct-button{
+    display: inline-block;
+        padding: 10px 30px;
+        font-size: 20px;
+        color: #fff;
+        background-color:rgb(5, 133, 133);
+        margin-right: 10px;
+        border-style: none;
+        transition: background-color 0.3s ease;
+ }
+ .ct-button:hover{
+background-image: repeating-linear-gradient(rgb(21, 90, 29), white);
+ }
+ .footer{
+  font-family: sans-serif;
+  margin-top: 30px;
+  background-image: repeating-linear-gradient(rgb(155, 219, 248), white);
+border-top-left-radius: 20%;
+border-top-right-radius: 20%;
+}
+.end1 {
+margin-top: 20px;}
+#para{
+  margin-top: 20px;
+}
+.header-logo:hover {
+  font-size: 40px;
+}
+.header-menu li a:hover{
+  font-size: 20px;
+  background-color: #666;
+  color: white;
+  border-radius: 20%;
+  padding: 10px;
+}
+.heading-container h1,
+.heading-container p {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.heading-container img {
+  transition: transform 0.3s ease;
+}
+.heading-container img:hover {
+  transform: scale(1.2);
+}
+.footer h3{
+  font-style: italic;
+  cursor: pointer;
+  }
+  
+.footer p:hover{
+font-size: 20px;
+font-weight: 100;
+cursor: pointer;
+}
+.end1 img:hover{
+  transform: scale(1.2);
+cursor: pointer;
+}
+
+/* Hide the menu icon by default */
+.menu-icon {
+  display: none;
+}
+
+/* Add media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .header {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    color: #333;
+    font-size: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .header-menu.active {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 20px;
+  }
+
+  .header-menu.active li {
+    margin-bottom: 10px;
+  }
+
+  .header-menu.active li:last-child {
+    margin-bottom: 0;
+  }
+
+  .header-menu.active li a {
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .maincontainer {
+    height: auto;
+    padding: 20px;
+  }
+
+  .maincontainer h1,
+  .maincontainer p {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .features {
+    display: flex;
+    flex-direction: column;
+  }
+
+}

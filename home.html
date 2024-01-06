@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Recruitment Solution</title>
+  <link rel="stylesheet" href="home.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="#" class="header-logo"><img src="code.png" width="80px">coderzsite </a>
+      <ul class="header-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+      <div>
+      <a href="search.html" class="cta-button">Candidates</a>
+      <a href="login.html" class="cta-button">Login</a>
+    </div>
+
+      <div class="menu-icon">
+ <img  src="menu.png" width="40px">
+      </div>
+
+
+    </div>
+    <div class="heading-container">
+        <div style="display: flex; flex-direction: column; margin-left: 20px;">
+        <h1 style="font-family: 'Times New Roman', Times, serif;font-weight: 900;font-size: 74px;color: #fff;line-height: 1;">Streamline Your Hiring Process</h1>
+        <p style="color: white; font-style: italic;">Our Online Recruitment Solution helps <br>you find the perfect candidates<br> quickly and efficiently.</p>
+    <button class="cta-button" style="border:none ; width: 40%;margin-left: 150px;">Get Started</button>
+    </div>
+        <img style="border-bottom-left-radius: 30%; height: 400px;width: 600px;border-bottom-right-radius: 30%;margin-top: 400px;" src="banner.jpg" alt="Image" />
+      </div>
+      <div class="maincontainer" >
+        <h1 style=" margin-right: 500px;font-weight: 800; " >We’re helping decision-makers<br> determine the root cause of<br> organisational problems in order to<br> make changes that have<span style="color: rgb(16, 200, 200);"> real impact.</span></h1>
+    <p style=" margin-left: 500px ;font-weight:200;font-weight:400; ">Our platform provides employers with rich data insights into<br> the employee experience, whilst assisting them in meeting<br> their legal obligations. By investing in creating a<br> psychologically safe workplace, organisations can see enormous benefits.
+    </p>
+    </div>
+      <div id="mycontainer">
+    <div class="features" >
+      <div class="feature">
+        <h2  >Advanced Candidate Search</h2>
+        <img src="icon1.png" width="100px" style="color: green;" >
+        <p>Easily search and filter through a large pool of candidates based on skills, experience, and other criteria.</p>
+      </div>
+      <div class="feature">
+        <h2>Automated Screening Section</h2>
+        <img src="icon2.png" width="100px" style="color: green;margin-top: 10px;" >
+        <p>Save time by automatically screening candidates based on predefined qualifications, ensuring only the best fit for your job.</p>
+      </div>
+      <div class="feature">
+        <h2>Collaborative Hiring Section</h2>
+        <img src="icon3.png" width="100px" style="color: green;margin-top: 10px;" >
+        <p>Streamline your hiring process with collaborative tools that allow HR professionals and hiring managers to work together efficiently.</p
+      </div>
+    </div>
+</div>
+<div class="sections">
+    <marquee id="marq">We’re helping decision-makers determine the root cause of organisational </span>problems in order to make changes that have real impact.
+    </marquee>
+<p style="color:rgb(80, 78, 78);font-style: oblique;">"Transform your workplace culture and drive success."</p>
+<button class="ct-button">lets get started here</button>
+</div>
+
+<div class="footer">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+<h3>Business Solutions</h3>   
+<p>platform</p>
+<p>Services</p>
+</div>
+      <div class="col">
+        <h3>science </h3>   
+        <p>our approach </p>
+        <p>data science</p>
+              </div>
+      <div class="col">
+        <h3>resources </h3>   
+        <p>WHS regulations </p>
+        <p>FAQS</p>
+            </div>
+            <div class="col">
+              <h3>company </h3>   
+              <p>about  </p>
+              <p>contact</p>
+
+                  </div>
+    </div>
+  </div>
+</div>
+
+<div class="end1">
+  <img  src="facebook.png" width="40px">
+  <img src="twitter-sign.png" width="40px">
+  <img src="whatsapp.png" width="40px">
+  <img src="linkedin.png" width="40px">
+</div>
+
+<p id="para">all rights reserved to copyright 2023 by @<a style="color: black;" href="#" >coderzsite</a></p>
+  </div>
+
+  
+</body>
+<script>
+   
+// Add JavaScript code to toggle the active class for the menu icon
+const menuIcon = document.querySelector('.menu-icon');
+const headerMenu = document.querySelector('.header-menu');
+
+menuIcon.addEventListener('click', function() {
+  headerMenu.classList.toggle('active');
+});
+
+
+// Add JavaScript code to adjust the image height on page load and window resize
+window.addEventListener('load', adjustImageHeight);
+window.addEventListener('resize', adjustImageHeight);
+
+function adjustImageHeight() {
+  const headingContainer = document.querySelector('.heading-container');
+  const image = headingContainer.querySelector('img');
+  const containerHeight = headingContainer.clientHeight;
+  const contentHeight = headingContainer.querySelector('.heading-content').clientHeight;
+  const imageHeight = containerHeight - contentHeight - 50; // Subtract additional margin/padding
+
+  image.style.height = `${imageHeight}px`;
+}
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</html>

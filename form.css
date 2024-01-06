@@ -1,0 +1,231 @@
+/* CSS styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(to right, rgb(188, 18, 177) , rgb(166, 156, 235));
+  }
+
+  .container {
+    margin-top: 100px;
+    display: flex;
+    width: 800px;
+    height: 400px;
+  }
+
+  .form-side {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  .heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+    position: relative; /* Add relative positioning */
+  }
+
+  .heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 30px;
+    height: 2px;
+    background-color: purple;
+  }
+
+  .input-group {
+    margin-bottom: 10px;
+  }
+
+
+  .input-group input {
+    width: 100%;
+    padding: 5px;
+    border-style: none;
+  }
+
+  .input-group input::placeholder {
+    border-bottom: 1px solid purple;
+  }
+
+  .login-button {
+    background-color: purple;
+    color: white;
+    padding: 10px 110px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+
+  .login-button:hover {
+    background-color:rgb(194, 115, 194);
+  }
+
+  .links {
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    margin-top: 10px;
+  }
+
+  .links a {
+    color: purple;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+
+  .heading-side {
+    flex: 1;
+    background-image: url('solutions.jpg');
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 500;
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .heading {
+      font-size: 20px;
+    }
+  
+    .login-button {
+      padding: 10px 80px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-side,
+    .heading-side {
+      padding: 10px;
+    }
+  
+    .login-button {
+      padding: 10px 60px;
+    }
+  }
+
+
+
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(rgb(111, 176, 237), white);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    z-index: 100;
+  }
+  
+      .header-logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        text-decoration: none;
+        padding-left: 20px;
+      }
+  
+      .header-menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+  
+      .header-menu li {
+        margin-right: 20px;
+      }
+  
+      .header-menu li a {
+        text-decoration: none;
+        color: #525050;
+      }
+  
+      .cta-button {
+        display: inline-block;
+        padding: 10px 30px;
+        font-size: 20px;
+        color: #fff;
+        background-color:rgb(15, 214, 214);
+        margin-right: 10px;
+        border-radius: 20%;
+        transition: background-color 0.3s ease;
+      }
+  
+      .cta-button:hover {
+        background-color:rgb(5, 133, 133);
+   }
+
+   .menu-icon {
+    display: none;
+  }
+  
+
+   /* Add media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .header {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    color: #333;
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .header-menu.active {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 20px;
+  }
+
+  .header-menu.active li {
+    margin-bottom: 10px;
+  }
+
+  .header-menu.active li:last-child {
+    margin-bottom: 0;
+  }
+
+  .header-menu.active li a {
+    color: #fff;
+  }
+  .container{
+    margin-top: 250px;
+  }
+}
+
+  
+  
